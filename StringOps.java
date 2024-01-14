@@ -22,9 +22,7 @@ public class StringOps {
     //////                                               ///////
     ////////////////////////////////////////////////////////////
     public static void main(String[] args) {
-        System.out.println(capVowelsLowRest("One two tHRee world"));
     }
-
     public static String capVowelsLowRest (String string) {
         String  vowels = "aioueAIOUE";
         String res = "";
@@ -84,8 +82,6 @@ public class StringOps {
 
         }
         return res;
-
-
     }
 
     private static String capitalizeFirstLetter(String word) {
