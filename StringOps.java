@@ -45,21 +45,21 @@ public class StringOps {
         }
 
         // Rule 1: The first word should be in lowercase.
-        string = makeFirstWordLowercase(string);
+        string = makeFirstWordLowercase (string);
 
         // Rule 2: Every word should start with an uppercase letter, and the rest should be lowercase.
-        string = capitalizeWords(string);
+        string = capitalizeWords (string);
 
 
         return string;
             
     }
 
-    private static String makeFirstWordLowercase(String input) {
-        return input.trim().split("\\s+")[0].toLowerCase() + input.substring(input.indexOf(" ") + 1);
+    private static String makeFirstWordLowercase (String input) {
+        return input.trim().split("\\s+")[0].toLowerCase() + input.substring(input.indexOf("") + 1);
     } 
 
-    private static String capitalizeWords(String input) {
+    private static String capitalizeWords (String input) {
           String[] words = input.trim().split("\\s+");
         StringBuilder result = new StringBuilder();
 
@@ -70,7 +70,7 @@ public class StringOps {
         return result.toString();
     }
 
-    public static int[] allIndexOf(String str, char ch) {
+    public static int[] allIndexOf (String str, char ch) {
         int count = 0;
         for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) == ch) {
