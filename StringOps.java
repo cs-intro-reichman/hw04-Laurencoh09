@@ -68,6 +68,9 @@ public class StringOps {
         }
 
         return result.toString();
+    
+    private static String removeSpaces(String input) {
+        return input.replaceAll("\\s", "");
     }
 
     public static int[] allIndexOf (String str, char ch) {
