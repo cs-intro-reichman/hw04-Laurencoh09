@@ -1,16 +1,12 @@
 public class StringOps {
     public static void main(String[] args) {
-           System.out.println(capVowelsLowRest("One two tHRee world"));
-         System.out.println(camelCase("Hello World")); // Output: helloWorld
-        System.out.println(camelCase("HELLO world")); // Output: helloWorld
-        System.out.println(camelCase(" tWo wordS")); // Output: twoWords
-        System.out.println(camelCase("world")); // Output: world
-        System.out.println(camelCase(" Intro to coMPUter sCIEncE ")); // Output: introToComputerScience
-}
+        System.out.println(capVowelsLowRest("One two tHRee world"));
+
+    }
 
     public static String capVowelsLowRest (String string) {
         String  vowels = "aioueAIOUE";
-        String res = "";
+        String res = " ";
         int size = string.length();
 
         for (int i = 0; i < size; i++){
@@ -41,7 +37,7 @@ public class StringOps {
     public static String camelCase (String string) {
          
         if (string == null || string.isEmpty()) {
-            return "";
+            return " ";
         }
 
         // Rule 1: The first word should be in lowercase.
@@ -56,7 +52,7 @@ public class StringOps {
     }
 
     private static String makeFirstWordLowercase (String input) {
-        return input.trim().split("\\s+")[0].toLowerCase() + input.substring(input.indexOf("") + 1);
+        return input.trim().split("\\s+")[0].toLowerCase() + input.substring(input.indexOf(" ") + 1);
     } 
 
     private static String capitalizeWords (String input) {
@@ -68,12 +64,9 @@ public class StringOps {
         }
 
         return result.toString();
-    
-    private static String removeSpaces(String input) {
-        return input.replaceAll("\\s", "");
     }
 
-    public static int[] allIndexOf (String str, char ch) {
+    public static int[] allIndexOf(String str, char ch) {
         int count = 0;
         for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) == ch) {
@@ -91,4 +84,3 @@ public class StringOps {
         return indices;
     }
 }
-
