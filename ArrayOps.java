@@ -1,6 +1,7 @@
 public class ArrayOps {
     public static void main(String[] args) {
-      
+      // int [] arr =  {7, 5, 4, 3, -12};
+      //System.out.println(isSorted(arr));
     }
 
     public static int findMissingInt (int [] array) {
@@ -65,7 +66,7 @@ public class ArrayOps {
     }
 
     public static boolean isSorted(int [] array) {
-       if (arr.length <= 1) {
+       if (array.length <= 1) {
         
             return true;
         }
@@ -73,20 +74,22 @@ public class ArrayOps {
         boolean increasing = true;
         boolean decreasing = true;
 
-        for (int i = 1; i < arr.length; i++) {
-            if (arr[i] > arr[i - 1]) {
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] > array[i - 1]) {
                 decreasing = false;
-            } else if (arr[i] < arr[i - 1]) {
+            } else if (array[i] < array[i - 1]) {
                 increasing = false;
             }
             if (!increasing && !decreasing) {
                 return false;
-                
+                  
             }
-        }
 
-        return increasing || decreasing;
-    }
+       }
+       return true;
+       
+       }
+
 }
-        return false;
-    }
+
+
