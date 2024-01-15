@@ -1,11 +1,6 @@
 public class StringOps {
     public static void main(String[] args) {
-         System.out.println(camelCase("Hello World")); // Output: helloWorld
-        System.out.println(camelCase("HELLO world")); // Output: helloWorld
-        System.out.println(camelCase(" tWo wordS")); // Output: twoWords
-        System.out.println(camelCase("world")); // Output: world
-        System.out.println(camelCase(" Intro to coMPUter sCIEncE ")); // Output: introToComputerScience
-    }
+           System.out.println(capVowelsLowRest("One two tHRee world"));
 }
 
     public static String capVowelsLowRest (String string) {
