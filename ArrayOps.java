@@ -1,4 +1,4 @@
-public class ArrayOps {
+public class ArrayOps { 
     public static void main(String[] args) {
       // int [] arr =  {7, 5, 4, 3, -12};
       //System.out.println(isSorted(arr));
